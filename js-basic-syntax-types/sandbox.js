@@ -243,13 +243,92 @@
 
 //----- Multiple different condictions of ELSE IF------
 
-const password = "Admin1234567"
+// const password = "Admin1234567"
 
-if(password.length >= 10){
-    console.log("That's a mighty password!")
-} else if(password.length >=8) {
-    console.log("Password is long enough!")
-} 
-else {
-    console.log("Password is to short!")
+// if(password.length >= 10){
+//     console.log("That's a mighty password!")
+// } else if(password.length >=8) {
+//     console.log("Password is long enough!")
+// } 
+// else {
+//     console.log("Password is to short!")
+// }
+
+//////////////////////LOGICAL OPERATORS///////////////////////////////////////////////////////
+
+//-----LOGICAL  AND && -----
+
+// const password = "@dmin123456"
+
+// if(password.length >= 10 && password.includes("@")){
+//     console.log("That's a mighty password!")
+// } 
+
+
+//----- LOGICAL OR || -----
+
+// const password = "@dmin"
+
+// if(password.length >=8 || password.includes("@")) {
+//     console.log("Password is strong enough!")
+// } 
+
+//----- LOGICAL NOT ! -----
+
+// let user = false;
+
+// if(!user){
+//     console.log("you must be logged in to continue")
+// }
+
+
+//////////////////////BREAK AND CONTINUE LOOP/////////////////////////////////////////////
+ 
+//-----BREAK-----
+// const scores = [0, 25, 50, 100, 200, 400]
+
+// for(let i = 0; i < scores.length; i++){
+//     console.log("Your score is ", scores[i]);
+//     if(scores[i] === 100){
+//         console.log("You got the top score");
+//         break;
+//     }
+// }
+
+//-----CONTINUE----- Wykluczenie któregoś z wyników
+
+// const scores = [0, 25, 50, 100, 200, 400]
+
+// for(let i = 0; i < scores.length; i++){
+//     if(scores[i] === 0){
+//         continue;
+//     }
+//     console.log("Your score is ", scores[i]);
+   
+//     }
+
+//////////////////////INSTRUKCJA WARUNKOWA SWITCH STATEMENT////////////////////////////////////////
+//Jeżeli wartość zmiennej pasuje do  konkretnego przypadku(case), wykonywany jest blok kodu z tego przypadku.
+//"defult" - logowanie konsoli kiedy wartość początkowa nie znajduje się w zbiorze.
+
+const grade = "D";
+
+switch(grade){
+    case "A":
+        console.log("You got an A!");
+        break;
+    case "B":
+        console.log("You got an B!");
+        break;
+    case "C":
+        console.log("You got an C!");
+        break;
+    case "D":
+        console.log("You got an D!");
+        break;
+    case "E":
+        console.log("You got an E!");
+        break;
+    default:
+        console.log("Not a valid grade!")
 }
