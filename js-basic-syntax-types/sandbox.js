@@ -125,7 +125,7 @@
 // let email = 'pawelfryc@gmail.com';
 // let names = ['Paweł', 'Tomek', 'Mateusz'];
 
-// // let result = email.includes('@gmail.com');
+// let result = email.includes('@gmail.com');
 // let result = names.includes('Andrzej');
 // console.log(result);
 
@@ -311,24 +311,135 @@
 //Jeżeli wartość zmiennej pasuje do  konkretnego przypadku(case), wykonywany jest blok kodu z tego przypadku.
 //"defult" - logowanie konsoli kiedy wartość początkowa nie znajduje się w zbiorze.
 
-const grade = "D";
+// const grade = "D";
 
-switch(grade){
-    case "A":
-        console.log("You got an A!");
-        break;
-    case "B":
-        console.log("You got an B!");
-        break;
-    case "C":
-        console.log("You got an C!");
-        break;
-    case "D":
-        console.log("You got an D!");
-        break;
-    case "E":
-        console.log("You got an E!");
-        break;
-    default:
-        console.log("Not a valid grade!")
-}
+// switch(grade){
+//     case "A":
+//         console.log("You got an A!");
+//         break;
+//     case "B":
+//         console.log("You got an B!");
+//         break;
+//     case "C":
+//         console.log("You got an C!");
+//         break;
+//     case "D":
+//         console.log("You got an D!");
+//         break;
+//     case "E":
+//         console.log("You got an E!");
+//         break;
+//     default:
+//         console.log("Not a valid grade!")
+// }
+
+
+////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////FUNCTIONS///////////////////////////////////
+
+//-----DEKLARACJA FUNKCJI (FUNCTION DECLARATION)-----
+// Deklarowane funkcje są windowane (hoisted) - odpalane asynchronicznie, mimo niższego położenia w document flow
+// To znaczy że można je najpierw przywołać a poźniej umieścić w document flow.
+
+// function mojaFunkcja(){
+//     console.log("Cześć Funkcjo!");
+// }
+
+// ----PRZYWOŁANIE FUNKCJI-----
+// mojaFunkcja()
+
+//-----FUNCTION EXPRESION-----
+// Nie są windowane, ale używamy ich w celu uzyskania logicznego przepływu kodu. (najpierw coś deklarujemy, potem odpalamy)
+
+// const mojaFunkcja = function(){
+// console.log("Dzień dobry")
+// };
+//  mojaFunkcja()
+
+//-----FUNCTIONS ARGUMENTS & PARAMETERS-----
+
+//  function mojaFunkcja(name, time){
+//     console.log(`Good ${time} ${name}`)
+//     };
+    
+//     mojaFunkcja('Paweł', 'morning')
+
+//-----RETURNING VALUES-----
+
+    // function calcArea(radius){
+    //     let area = 3.14 * radius**2;
+    //     return area;
+    // }
+    // const area = calcArea(5);
+    // console.log(area);
+
+//-----SHORTHAND-----
+   
+// function calcArea(radius){
+//         return 3.14 * radius**2;
+       
+//     }
+//     const area = calcArea(5);
+//     console.log(area);
+
+//------------------ARROW FUNCTIONS-----------------
+
+// const calcArea = (radius) => {
+//     return 3.14 * radius**2;
+// };
+
+// const area = calcArea(5);
+// console.log('area is:',area);
+
+//----------CALLBACK FUNCTION / FOREACH---------
+
+// let people = ['Paweł', 'Tomek', 'Mateusz', 'Andrzej', "Dorota"]
+
+// const logPerson = (person, index) => {
+//     console.log(`Hello ${person} - You are number ${index} on our list`)
+// }
+
+// people.forEach(logPerson);
+
+
+////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////OBJECTS////////////////////////////////////////
+//------ Every object have properties and methods (functions it can do)
+
+// ------->Properties
+// let user = {
+//     name: `Paweł`,
+//     age: 33,
+//     email: 'pawelfryc@gmail.com',
+//     location: 'Poland',
+//     blogs: [`Best weapons`, `10 things to make with meat`]
+// }
+// Przywoływanie konkretnych elementów obiektu
+// console.log(user);
+// console.log(user.name);
+
+// ---------->Methods
+
+// let user = {
+//     name: `Paweł`,
+//     age: 33,
+//     email: 'pawelfryc@gmail.com',
+//     location: 'Poland',
+//     blogs: [`Best weapons`, `10 things to make with meat`],
+//     login: function(){
+//         console.log('The user logged in');
+//     },
+//     logout: function(){
+//         console.log(`The usser logged out`)
+//     },
+//     logBlogs: function(){
+//         console.log(`this user has written the following blogs:`);
+//         this.blogs.forEach(blog => {
+//             console.log(blog)
+//         })
+
+//     }
+// };
+// console.log(user)
+// user.logBlogs()
+
