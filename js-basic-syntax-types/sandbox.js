@@ -395,11 +395,32 @@
 
 // let people = ['Paweł', 'Tomek', 'Mateusz', 'Andrzej', "Dorota"]
 
+// people.forEach((person,index) => {
+//     console.log(`Hello ${person}, your number is ${index}!`);
+// })
+
+
+//----------Wcześniej zdefiniowana callbackFunction----------
 // const logPerson = (person, index) => {
 //     console.log(`Hello ${person} - You are number ${index} on our list`)
 // }
 
 // people.forEach(logPerson);
+
+//----------GET A REFERENCE TO HTML----------
+// const people = ['Paweł', 'Tomek', 'Mateusz', 'Andrzej', "Dorota"]
+
+// //Określenie ścieżki do html:
+// const ul= document.querySelector('.people')
+// let html = ``;
+
+// people.forEach(person => {
+//     //Create Html template - tworzymy szablon html wewnątrz JS!
+// html += `<li>${person}</li>`;
+// });
+// //Implementowanie szablonu z js do html:
+// ul.innerHTML = html;
+
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////
@@ -407,39 +428,12 @@
 //------ Every object have properties and methods (functions it can do)
 
 // ------->Properties
-// let user = {
-//     name: `Paweł`,
-//     age: 33,
-//     email: 'pawelfryc@gmail.com',
-//     location: 'Poland',
-//     blogs: [`Best weapons`, `10 things to make with meat`]
-// }
+
+
 // Przywoływanie konkretnych elementów obiektu
-// console.log(user);
-// console.log(user.name);
+
 
 // ---------->Methods
 
-// let user = {
-//     name: `Paweł`,
-//     age: 33,
-//     email: 'pawelfryc@gmail.com',
-//     location: 'Poland',
-//     blogs: [`Best weapons`, `10 things to make with meat`],
-//     login: function(){
-//         console.log('The user logged in');
-//     },
-//     logout: function(){
-//         console.log(`The usser logged out`)
-//     },
-//     logBlogs: function(){
-//         console.log(`this user has written the following blogs:`);
-//         this.blogs.forEach(blog => {
-//             console.log(blog)
-//         })
 
-//     }
-// };
-// console.log(user)
-// user.logBlogs()
 
