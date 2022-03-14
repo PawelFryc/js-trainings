@@ -441,7 +441,25 @@
 // console.log(user.location);
 
 
-// ---------->Methods
-
+// ---------->Methods (FUNKCJE WEWNĄTRZ OBIEKTÓW)
+let user = {
+    name : `Paweł`,
+    gender : `male`,
+    location : `Katowice`,
+    age : 33,
+    email : `pawelfryc@gmail.com`,
+    blogs: [`Ten best assault riffles`, `How to make a gunpowder`],
+    login: function(){
+        console.log('The user logged in');
+    },
+    logBlogs: function(){
+        console.log('This user has writen the following blogs:');
+        this.blogs.forEach(blog => {
+            console.log(blog);
+        })
+    }
+};
+user.login();
+user.logBlogs()
 
 
