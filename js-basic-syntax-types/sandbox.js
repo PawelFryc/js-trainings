@@ -428,9 +428,17 @@
 //------ Every object have properties and methods (functions it can do)
 
 // ------->Properties
-
-
-// Przywoływanie konkretnych elementów obiektu
+// let user = {
+//     name : `Paweł`,
+//     gender : `male`,
+//     location : `Katowice`,
+//     age : 33,
+//     email : `pawelfryc@gmail.com`,
+//     blogs: [`Ten best assault riffles`, `How to make a gunpowder`]
+// };
+// console.log(user);
+// //-----WYLOGOWANIE KONKRETNEJ WŁAŚCIWOŚCI OBIEKTU
+// console.log(user.location);
 
 
 // ---------->Methods
