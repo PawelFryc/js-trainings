@@ -441,25 +441,52 @@
 // console.log(user.location);
 
 
-// ---------->Methods (FUNKCJE WEWNĄTRZ OBIEKTÓW)
-let user = {
-    name : `Paweł`,
-    gender : `male`,
-    location : `Katowice`,
-    age : 33,
-    email : `pawelfryc@gmail.com`,
-    blogs: [`Ten best assault riffles`, `How to make a gunpowder`],
-    login: function(){
-        console.log('The user logged in');
-    },
-    logBlogs: function(){
-        console.log('This user has writen the following blogs:');
-        this.blogs.forEach(blog => {
-            console.log(blog);
-        })
-    }
-};
-user.login();
-user.logBlogs()
+// ---------->Methods (FUNKCJE WEWNĄTRZ OBIEKTÓW)-----------
+// let user = {
+//     name : `Paweł`,
+//     gender : `male`,
+//     location : `Katowice`,
+//     age : 33,
+//     email : `pawelfryc@gmail.com`,
+//     blogs: [`Ten best assault riffles`, `How to make a gunpowder`],
+//     login: function(){
+//         console.log('The user logged in');
+//     },
+//     logBlogs: function(){
+//         console.log('This user has writen the following blogs:');
+//         this.blogs.forEach(blog => {
+//             console.log(blog);
+//         })
+//     }
+// };
+// user.login();
+// user.logBlogs()
 
+//----------->OBJECTS ARRAYS (TABLICE OBIEKTÓW)----------
 
+// const blogs = [
+//     {'Ten best assault riffles', likes: 30},
+//     {'How to make a gunpowder', likes: 50}
+// ]
+
+// let user = {
+//     name : `Paweł`,
+//     gender : `male`,
+//     location : `Katowice`,
+//     age : 33,
+//     email : `pawelfryc@gmail.com`,
+//     blogs: [
+//             {title: 'Ten best assault riffles', likes: 30},
+//             {title: 'How to make a gunpowder', likes: 50}
+//         ],
+//     login: function(){
+//         console.log('The user logged in');
+//     },
+//     logBlogs: function(){
+//         console.log('This user has writen the following blogs:');
+//         this.blogs.forEach(blog => {
+//             console.log(blog.title, blog.likes);
+//         });
+//     }
+// };
+// user.logBlogs()
