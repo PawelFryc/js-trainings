@@ -490,3 +490,25 @@
 //     }
 // };
 // user.logBlogs()
+
+//----------> MATH OBJECTS <--------------
+
+console.log(Math);
+console.log(Math.PI);
+
+const area = 7.4;
+
+//--Zaokrąglenie
+console.log(Math.round(area))
+//--Zaokrąglenie w górę
+console.log(Math.ceil(area))
+//--Zaokrąglenie w dół
+console.log(Math.floor(area))
+//--Ucięcie po przecinku
+console.log(Math.trunc(area))
+
+//Random number 0-1
+const random = Math.random()
+
+//Random number 0-100
+console.log(Math.round(random * 100));
